@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B6A8A12058062200965C81 /* EnmoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A8972058062200965C81 /* EnmoSDK.framework */; };
+		18B6A8A62058062200965C81 /* EnmoSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A8A52058062200965C81 /* EnmoSDKTests.m */; };
+		18B6A8A82058062200965C81 /* EnmoSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A89A2058062200965C81 /* EnmoSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18B6A9012058065A00965C81 /* EnmoSDK-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A9002058065A00965C81 /* EnmoSDK-Prefix.pch */; };
+		18B6A92C20580AEF00965C81 /* EnmoIDFV.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A90420580AED00965C81 /* EnmoIDFV.m */; };
+		18B6A92D20580AEF00965C81 /* RulesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A90520580AED00965C81 /* RulesManager.m */; };
+		18B6A92E20580AEF00965C81 /* EmailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A90620580AED00965C81 /* EmailManager.m */; };
+		18B6A92F20580AEF00965C81 /* EnmoIDFV.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A90720580AED00965C81 /* EnmoIDFV.h */; };
+		18B6A93020580AEF00965C81 /* EnmoBeaconDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A90820580AED00965C81 /* EnmoBeaconDetail.m */; };
+		18B6A93120580AEF00965C81 /* EnmoGeofence.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A90920580AED00965C81 /* EnmoGeofence.m */; };
+		18B6A93220580AEF00965C81 /* RulesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A90A20580AED00965C81 /* RulesManager.h */; };
+		18B6A93320580AEF00965C81 /* EddystoneManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A90B20580AED00965C81 /* EddystoneManager.h */; };
+		18B6A93420580AEF00965C81 /* EnmoAppId.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A90C20580AED00965C81 /* EnmoAppId.h */; };
+		18B6A93520580AEF00965C81 /* EnmoAppId.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A90D20580AED00965C81 /* EnmoAppId.m */; };
+		18B6A93620580AEF00965C81 /* EnmoRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A90E20580AEE00965C81 /* EnmoRule.h */; };
+		18B6A93720580AEF00965C81 /* BLECharacteristic.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A91020580AEE00965C81 /* BLECharacteristic.h */; };
+		18B6A93820580AEF00965C81 /* BLECharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A91120580AEE00965C81 /* BLECharacteristic.m */; };
+		18B6A93920580AEF00965C81 /* BLEDevice+CBPeripheralDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A91220580AEE00965C81 /* BLEDevice+CBPeripheralDelegate.h */; };
+		18B6A93A20580AEF00965C81 /* BLEDevice+CBPeripheralDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A91320580AEE00965C81 /* BLEDevice+CBPeripheralDelegate.m */; };
+		18B6A93B20580AEF00965C81 /* BLEDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A91420580AEE00965C81 /* BLEDevice.h */; };
+		18B6A93C20580AEF00965C81 /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A91520580AEE00965C81 /* BLEDevice.m */; };
+		18B6A93D20580AEF00965C81 /* BLEService.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A91620580AEE00965C81 /* BLEService.h */; };
+		18B6A93E20580AEF00965C81 /* BLEService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A91720580AEE00965C81 /* BLEService.m */; };
+		18B6A93F20580AEF00965C81 /* BeaconsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A91820580AEE00965C81 /* BeaconsManager.h */; };
+		18B6A94020580AEF00965C81 /* ESSBeaconScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A91A20580AEE00965C81 /* ESSBeaconScanner.h */; };
+		18B6A94120580AEF00965C81 /* ESSBeaconScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A91B20580AEE00965C81 /* ESSBeaconScanner.m */; };
+		18B6A94220580AEF00965C81 /* ESSEddystone.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A91C20580AEE00965C81 /* ESSEddystone.h */; };
+		18B6A94320580AEF00965C81 /* ESSEddystone.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A91D20580AEE00965C81 /* ESSEddystone.m */; };
+		18B6A94420580AEF00965C81 /* ESSTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A91E20580AEE00965C81 /* ESSTimer.h */; };
+		18B6A94520580AEF00965C81 /* ESSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A91F20580AEE00965C81 /* ESSTimer.m */; };
+		18B6A94620580AEF00965C81 /* EddystoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A92020580AEE00965C81 /* EddystoneManager.m */; };
+		18B6A94720580AEF00965C81 /* GimbalsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A92120580AEE00965C81 /* GimbalsManager.h */; };
+		18B6A94820580AEF00965C81 /* BeaconsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A92220580AEE00965C81 /* BeaconsManager.m */; };
+		18B6A94920580AEF00965C81 /* EmailManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A92320580AEE00965C81 /* EmailManager.h */; };
+		18B6A94A20580AEF00965C81 /* EnmoRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A92420580AEE00965C81 /* EnmoRule.m */; };
+		18B6A94B20580AEF00965C81 /* EnmoGeofence.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A92520580AEE00965C81 /* EnmoGeofence.h */; };
+		18B6A94C20580AEF00965C81 /* EnmoBeaconDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A92620580AEE00965C81 /* EnmoBeaconDetail.h */; };
+		18B6A94D20580AEF00965C81 /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A92720580AEE00965C81 /* Logger.h */; };
+		18B6A94E20580AEF00965C81 /* UIAlerter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A92820580AEF00965C81 /* UIAlerter.m */; };
+		18B6A94F20580AEF00965C81 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A92920580AEF00965C81 /* Logger.m */; };
+		18B6A95020580AEF00965C81 /* UIAlerter.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A92A20580AEF00965C81 /* UIAlerter.h */; };
+		18B6A95120580AEF00965C81 /* GimbalsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A92B20580AEF00965C81 /* GimbalsManager.m */; };
+		18B6A95420580B1000965C81 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A95320580B1000965C81 /* CoreLocation.framework */; };
+		18B6A95620580B1800965C81 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A95520580B1800965C81 /* MessageUI.framework */; };
+		18B6A95820580B2300965C81 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A95720580B2300965C81 /* CoreData.framework */; };
+		18B6A95A20580B2A00965C81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A95920580B2A00965C81 /* UIKit.framework */; };
+		18B6A95C20580B2F00965C81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A95B20580B2F00965C81 /* CoreGraphics.framework */; };
+		18B6A95E20580B3600965C81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A95D20580B3600965C81 /* Foundation.framework */; };
+		18B6A96020580B3C00965C81 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A95F20580B3C00965C81 /* CoreBluetooth.framework */; };
+		18B6A96220580B4500965C81 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A96120580B4500965C81 /* libz.tbd */; };
+		18B6A96420580B4D00965C81 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A96320580B4D00965C81 /* MapKit.framework */; };
+		18B6A96620580B5300965C81 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A96520580B5300965C81 /* Security.framework */; };
+		18B6A97420580BDD00965C81 /* ContextCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A96820580BDC00965C81 /* ContextCore.framework */; };
+		18B6A97520580BDD00965C81 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A96A20580BDC00965C81 /* Common.framework */; };
+		18B6A97620580BDD00965C81 /* ContextLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A96C20580BDC00965C81 /* ContextLocation.framework */; };
+		18B6A97720580BDD00965C81 /* DataModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B6A96E20580BDC00965C81 /* DataModels.bundle */; };
+		18B6A97820580BDD00965C81 /* ContextProfiling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A97020580BDC00965C81 /* ContextProfiling.framework */; };
+		18B6A97920580BDD00965C81 /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A97120580BDC00965C81 /* FYX.framework */; };
+		18B6A97A20580BDD00965C81 /* NetworkServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B6A97320580BDD00965C81 /* NetworkServices.framework */; };
+		18B6A98B205954BD00965C81 /* EnmoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6A989205954BD00965C81 /* EnmoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18B6A98C205954BD00965C81 /* EnmoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6A98A205954BD00965C81 /* EnmoManager.m */; };
+		92ABC936CC20C98F3784D07A /* libPods-EnmoSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E55A2047B751239F5FDD7B36 /* libPods-EnmoSDKTests.a */; };
+		E7021E0C3CE6C552E426DC44 /* libPods-EnmoSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E8EFC7FCBA8C686314D46F /* libPods-EnmoSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B6A8A22058062200965C81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B6A88E2058062200965C81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B6A8962058062200965C81;
+			remoteInfo = EnmoSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18B6A8972058062200965C81 /* EnmoSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EnmoSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B6A89A2058062200965C81 /* EnmoSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnmoSDK.h; sourceTree = "<group>"; };
+		18B6A89B2058062200965C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B6A8A02058062200965C81 /* EnmoSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnmoSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B6A8A52058062200965C81 /* EnmoSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnmoSDKTests.m; sourceTree = "<group>"; };
+		18B6A8A72058062200965C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B6A9002058065A00965C81 /* EnmoSDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EnmoSDK-Prefix.pch"; sourceTree = "<group>"; };
+		18B6A90420580AED00965C81 /* EnmoIDFV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnmoIDFV.m; sourceTree = "<group>"; };
+		18B6A90520580AED00965C81 /* RulesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulesManager.m; sourceTree = "<group>"; };
+		18B6A90620580AED00965C81 /* EmailManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailManager.m; sourceTree = "<group>"; };
+		18B6A90720580AED00965C81 /* EnmoIDFV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnmoIDFV.h; sourceTree = "<group>"; };
+		18B6A90820580AED00965C81 /* EnmoBeaconDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnmoBeaconDetail.m; sourceTree = "<group>"; };
+		18B6A90920580AED00965C81 /* EnmoGeofence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnmoGeofence.m; sourceTree = "<group>"; };
+		18B6A90A20580AED00965C81 /* RulesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulesManager.h; sourceTree = "<group>"; };
+		18B6A90B20580AED00965C81 /* EddystoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EddystoneManager.h; sourceTree = "<group>"; };
+		18B6A90C20580AED00965C81 /* EnmoAppId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnmoAppId.h; sourceTree = "<group>"; };
+		18B6A90D20580AED00965C81 /* EnmoAppId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnmoAppId.m; sourceTree = "<group>"; };
+		18B6A90E20580AEE00965C81 /* EnmoRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnmoRule.h; sourceTree = "<group>"; };
+		18B6A91020580AEE00965C81 /* BLECharacteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLECharacteristic.h; sourceTree = "<group>"; };
+		18B6A91120580AEE00965C81 /* BLECharacteristic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLECharacteristic.m; sourceTree = "<group>"; };
+		18B6A91220580AEE00965C81 /* BLEDevice+CBPeripheralDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BLEDevice+CBPeripheralDelegate.h"; sourceTree = "<group>"; };
+		18B6A91320580AEE00965C81 /* BLEDevice+CBPeripheralDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BLEDevice+CBPeripheralDelegate.m"; sourceTree = "<group>"; };
+		18B6A91420580AEE00965C81 /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
+		18B6A91520580AEE00965C81 /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
+		18B6A91620580AEE00965C81 /* BLEService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEService.h; sourceTree = "<group>"; };
+		18B6A91720580AEE00965C81 /* BLEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEService.m; sourceTree = "<group>"; };
+		18B6A91820580AEE00965C81 /* BeaconsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconsManager.h; sourceTree = "<group>"; };
+		18B6A91A20580AEE00965C81 /* ESSBeaconScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSBeaconScanner.h; sourceTree = "<group>"; };
+		18B6A91B20580AEE00965C81 /* ESSBeaconScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSBeaconScanner.m; sourceTree = "<group>"; };
+		18B6A91C20580AEE00965C81 /* ESSEddystone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSEddystone.h; sourceTree = "<group>"; };
+		18B6A91D20580AEE00965C81 /* ESSEddystone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSEddystone.m; sourceTree = "<group>"; };
+		18B6A91E20580AEE00965C81 /* ESSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSTimer.h; sourceTree = "<group>"; };
+		18B6A91F20580AEE00965C81 /* ESSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSTimer.m; sourceTree = "<group>"; };
+		18B6A92020580AEE00965C81 /* EddystoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EddystoneManager.m; sourceTree = "<group>"; };
+		18B6A92120580AEE00965C81 /* GimbalsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GimbalsManager.h; sourceTree = "<group>"; };
+		18B6A92220580AEE00965C81 /* BeaconsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconsManager.m; sourceTree = "<group>"; };
+		18B6A92320580AEE00965C81 /* EmailManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailManager.h; sourceTree = "<group>"; };
+		18B6A92420580AEE00965C81 /* EnmoRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnmoRule.m; sourceTree = "<group>"; };
+		18B6A92520580AEE00965C81 /* EnmoGeofence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnmoGeofence.h; sourceTree = "<group>"; };
+		18B6A92620580AEE00965C81 /* EnmoBeaconDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnmoBeaconDetail.h; sourceTree = "<group>"; };
+		18B6A92720580AEE00965C81 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		18B6A92820580AEF00965C81 /* UIAlerter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlerter.m; sourceTree = "<group>"; };
+		18B6A92920580AEF00965C81 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		18B6A92A20580AEF00965C81 /* UIAlerter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlerter.h; sourceTree = "<group>"; };
+		18B6A92B20580AEF00965C81 /* GimbalsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GimbalsManager.m; sourceTree = "<group>"; };
+		18B6A95320580B1000965C81 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		18B6A95520580B1800965C81 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		18B6A95720580B2300965C81 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		18B6A95920580B2A00965C81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18B6A95B20580B2F00965C81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18B6A95D20580B3600965C81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18B6A95F20580B3C00965C81 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		18B6A96120580B4500965C81 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		18B6A96320580B4D00965C81 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		18B6A96520580B5300965C81 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18B6A96820580BDC00965C81 /* ContextCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextCore.framework; sourceTree = "<group>"; };
+		18B6A96A20580BDC00965C81 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
+		18B6A96C20580BDC00965C81 /* ContextLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextLocation.framework; sourceTree = "<group>"; };
+		18B6A96E20580BDC00965C81 /* DataModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DataModels.bundle; sourceTree = "<group>"; };
+		18B6A97020580BDC00965C81 /* ContextProfiling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextProfiling.framework; sourceTree = "<group>"; };
+		18B6A97120580BDC00965C81 /* FYX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FYX.framework; sourceTree = "<group>"; };
+		18B6A97320580BDD00965C81 /* NetworkServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkServices.framework; sourceTree = "<group>"; };
+		18B6A989205954BD00965C81 /* EnmoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnmoManager.h; sourceTree = "<group>"; };
+		18B6A98A205954BD00965C81 /* EnmoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnmoManager.m; sourceTree = "<group>"; };
+		1B17A6FE5642AF008A25E6D7 /* Pods-EnmoSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnmoSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnmoSDK/Pods-EnmoSDK.release.xcconfig"; sourceTree = "<group>"; };
+		A3E8EFC7FCBA8C686314D46F /* libPods-EnmoSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnmoSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C68BD8CD6DED7C75F9AEB3 /* Pods-EnmoSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnmoSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnmoSDKTests/Pods-EnmoSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C178A44E3401EED141088653 /* Pods-EnmoSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnmoSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnmoSDKTests/Pods-EnmoSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3EB49C9F342A749E3C369BE /* Pods-EnmoSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnmoSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnmoSDK/Pods-EnmoSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		E55A2047B751239F5FDD7B36 /* libPods-EnmoSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnmoSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B6A8932058062200965C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6A96620580B5300965C81 /* Security.framework in Frameworks */,
+				18B6A97620580BDD00965C81 /* ContextLocation.framework in Frameworks */,
+				18B6A96420580B4D00965C81 /* MapKit.framework in Frameworks */,
+				18B6A97A20580BDD00965C81 /* NetworkServices.framework in Frameworks */,
+				18B6A97920580BDD00965C81 /* FYX.framework in Frameworks */,
+				18B6A96220580B4500965C81 /* libz.tbd in Frameworks */,
+				18B6A96020580B3C00965C81 /* CoreBluetooth.framework in Frameworks */,
+				18B6A97420580BDD00965C81 /* ContextCore.framework in Frameworks */,
+				18B6A95E20580B3600965C81 /* Foundation.framework in Frameworks */,
+				18B6A95C20580B2F00965C81 /* CoreGraphics.framework in Frameworks */,
+				18B6A95A20580B2A00965C81 /* UIKit.framework in Frameworks */,
+				18B6A97820580BDD00965C81 /* ContextProfiling.framework in Frameworks */,
+				18B6A95820580B2300965C81 /* CoreData.framework in Frameworks */,
+				18B6A97520580BDD00965C81 /* Common.framework in Frameworks */,
+				18B6A95620580B1800965C81 /* MessageUI.framework in Frameworks */,
+				18B6A95420580B1000965C81 /* CoreLocation.framework in Frameworks */,
+				E7021E0C3CE6C552E426DC44 /* libPods-EnmoSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B6A89D2058062200965C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6A8A12058062200965C81 /* EnmoSDK.framework in Frameworks */,
+				92ABC936CC20C98F3784D07A /* libPods-EnmoSDKTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B6A88D2058062200965C81 = {
+			isa = PBXGroup;
+			children = (
+				18B6A9002058065A00965C81 /* EnmoSDK-Prefix.pch */,
+				18B6A90320580AD300965C81 /* Common */,
+				18B6A8992058062200965C81 /* EnmoSDK */,
+				18B6A8A42058062200965C81 /* EnmoSDKTests */,
+				18B6A8982058062200965C81 /* Products */,
+				18B6A95220580B1000965C81 /* Frameworks */,
+				41944A26B70BFC8AE3FDF8CE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		18B6A8982058062200965C81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A8972058062200965C81 /* EnmoSDK.framework */,
+				18B6A8A02058062200965C81 /* EnmoSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B6A8992058062200965C81 /* EnmoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A89A2058062200965C81 /* EnmoSDK.h */,
+				18B6A89B2058062200965C81 /* Info.plist */,
+				18B6A989205954BD00965C81 /* EnmoManager.h */,
+				18B6A98A205954BD00965C81 /* EnmoManager.m */,
+			);
+			path = EnmoSDK;
+			sourceTree = "<group>";
+		};
+		18B6A8A42058062200965C81 /* EnmoSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A8A52058062200965C81 /* EnmoSDKTests.m */,
+				18B6A8A72058062200965C81 /* Info.plist */,
+			);
+			path = EnmoSDKTests;
+			sourceTree = "<group>";
+		};
+		18B6A90320580AD300965C81 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A90F20580AEE00965C81 /* SensorTag */,
+				18B6A91920580AEE00965C81 /* Eddystone */,
+				18B6A91820580AEE00965C81 /* BeaconsManager.h */,
+				18B6A92220580AEE00965C81 /* BeaconsManager.m */,
+				18B6A90B20580AED00965C81 /* EddystoneManager.h */,
+				18B6A92020580AEE00965C81 /* EddystoneManager.m */,
+				18B6A92320580AEE00965C81 /* EmailManager.h */,
+				18B6A90620580AED00965C81 /* EmailManager.m */,
+				18B6A90C20580AED00965C81 /* EnmoAppId.h */,
+				18B6A90D20580AED00965C81 /* EnmoAppId.m */,
+				18B6A92620580AEE00965C81 /* EnmoBeaconDetail.h */,
+				18B6A90820580AED00965C81 /* EnmoBeaconDetail.m */,
+				18B6A92520580AEE00965C81 /* EnmoGeofence.h */,
+				18B6A90920580AED00965C81 /* EnmoGeofence.m */,
+				18B6A90720580AED00965C81 /* EnmoIDFV.h */,
+				18B6A90420580AED00965C81 /* EnmoIDFV.m */,
+				18B6A90E20580AEE00965C81 /* EnmoRule.h */,
+				18B6A92420580AEE00965C81 /* EnmoRule.m */,
+				18B6A92120580AEE00965C81 /* GimbalsManager.h */,
+				18B6A92B20580AEF00965C81 /* GimbalsManager.m */,
+				18B6A92720580AEE00965C81 /* Logger.h */,
+				18B6A92920580AEF00965C81 /* Logger.m */,
+				18B6A90A20580AED00965C81 /* RulesManager.h */,
+				18B6A90520580AED00965C81 /* RulesManager.m */,
+				18B6A92A20580AEF00965C81 /* UIAlerter.h */,
+				18B6A92820580AEF00965C81 /* UIAlerter.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		18B6A90F20580AEE00965C81 /* SensorTag */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A91020580AEE00965C81 /* BLECharacteristic.h */,
+				18B6A91120580AEE00965C81 /* BLECharacteristic.m */,
+				18B6A91220580AEE00965C81 /* BLEDevice+CBPeripheralDelegate.h */,
+				18B6A91320580AEE00965C81 /* BLEDevice+CBPeripheralDelegate.m */,
+				18B6A91420580AEE00965C81 /* BLEDevice.h */,
+				18B6A91520580AEE00965C81 /* BLEDevice.m */,
+				18B6A91620580AEE00965C81 /* BLEService.h */,
+				18B6A91720580AEE00965C81 /* BLEService.m */,
+			);
+			path = SensorTag;
+			sourceTree = "<group>";
+		};
+		18B6A91920580AEE00965C81 /* Eddystone */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A91A20580AEE00965C81 /* ESSBeaconScanner.h */,
+				18B6A91B20580AEE00965C81 /* ESSBeaconScanner.m */,
+				18B6A91C20580AEE00965C81 /* ESSEddystone.h */,
+				18B6A91D20580AEE00965C81 /* ESSEddystone.m */,
+				18B6A91E20580AEE00965C81 /* ESSTimer.h */,
+				18B6A91F20580AEE00965C81 /* ESSTimer.m */,
+			);
+			path = Eddystone;
+			sourceTree = "<group>";
+		};
+		18B6A95220580B1000965C81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A96920580BDC00965C81 /* Common.embeddedframework */,
+				18B6A96720580BDC00965C81 /* ContextCore.embeddedframework */,
+				18B6A96B20580BDC00965C81 /* ContextLocation.embeddedframework */,
+				18B6A96F20580BDC00965C81 /* ContextProfiling.embeddedframework */,
+				18B6A97120580BDC00965C81 /* FYX.framework */,
+				18B6A97220580BDD00965C81 /* NetworkServices.embeddedframework */,
+				18B6A96520580B5300965C81 /* Security.framework */,
+				18B6A96320580B4D00965C81 /* MapKit.framework */,
+				18B6A96120580B4500965C81 /* libz.tbd */,
+				18B6A95F20580B3C00965C81 /* CoreBluetooth.framework */,
+				18B6A95D20580B3600965C81 /* Foundation.framework */,
+				18B6A95B20580B2F00965C81 /* CoreGraphics.framework */,
+				18B6A95920580B2A00965C81 /* UIKit.framework */,
+				18B6A95720580B2300965C81 /* CoreData.framework */,
+				18B6A95520580B1800965C81 /* MessageUI.framework */,
+				18B6A95320580B1000965C81 /* CoreLocation.framework */,
+				A3E8EFC7FCBA8C686314D46F /* libPods-EnmoSDK.a */,
+				E55A2047B751239F5FDD7B36 /* libPods-EnmoSDKTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18B6A96720580BDC00965C81 /* ContextCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A96820580BDC00965C81 /* ContextCore.framework */,
+			);
+			path = ContextCore.embeddedframework;
+			sourceTree = "<group>";
+		};
+		18B6A96920580BDC00965C81 /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A96A20580BDC00965C81 /* Common.framework */,
+			);
+			path = Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		18B6A96B20580BDC00965C81 /* ContextLocation.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A96C20580BDC00965C81 /* ContextLocation.framework */,
+				18B6A96D20580BDC00965C81 /* Resources */,
+			);
+			path = ContextLocation.embeddedframework;
+			sourceTree = "<group>";
+		};
+		18B6A96D20580BDC00965C81 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A96E20580BDC00965C81 /* DataModels.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18B6A96F20580BDC00965C81 /* ContextProfiling.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A97020580BDC00965C81 /* ContextProfiling.framework */,
+			);
+			path = ContextProfiling.embeddedframework;
+			sourceTree = "<group>";
+		};
+		18B6A97220580BDD00965C81 /* NetworkServices.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				18B6A97320580BDD00965C81 /* NetworkServices.framework */,
+			);
+			path = NetworkServices.embeddedframework;
+			sourceTree = "<group>";
+		};
+		41944A26B70BFC8AE3FDF8CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB49C9F342A749E3C369BE /* Pods-EnmoSDK.debug.xcconfig */,
+				1B17A6FE5642AF008A25E6D7 /* Pods-EnmoSDK.release.xcconfig */,
+				A8C68BD8CD6DED7C75F9AEB3 /* Pods-EnmoSDKTests.debug.xcconfig */,
+				C178A44E3401EED141088653 /* Pods-EnmoSDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18B6A8942058062200965C81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6A94720580AEF00965C81 /* GimbalsManager.h in Headers */,
+				18B6A98B205954BD00965C81 /* EnmoManager.h in Headers */,
+				18B6A93920580AEF00965C81 /* BLEDevice+CBPeripheralDelegate.h in Headers */,
+				18B6A93420580AEF00965C81 /* EnmoAppId.h in Headers */,
+				18B6A94420580AEF00965C81 /* ESSTimer.h in Headers */,
+				18B6A94220580AEF00965C81 /* ESSEddystone.h in Headers */,
+				18B6A92F20580AEF00965C81 /* EnmoIDFV.h in Headers */,
+				18B6A93320580AEF00965C81 /* EddystoneManager.h in Headers */,
+				18B6A9012058065A00965C81 /* EnmoSDK-Prefix.pch in Headers */,
+				18B6A93220580AEF00965C81 /* RulesManager.h in Headers */,
+				18B6A94B20580AEF00965C81 /* EnmoGeofence.h in Headers */,
+				18B6A93D20580AEF00965C81 /* BLEService.h in Headers */,
+				18B6A93B20580AEF00965C81 /* BLEDevice.h in Headers */,
+				18B6A93F20580AEF00965C81 /* BeaconsManager.h in Headers */,
+				18B6A94920580AEF00965C81 /* EmailManager.h in Headers */,
+				18B6A94D20580AEF00965C81 /* Logger.h in Headers */,
+				18B6A94C20580AEF00965C81 /* EnmoBeaconDetail.h in Headers */,
+				18B6A95020580AEF00965C81 /* UIAlerter.h in Headers */,
+				18B6A93720580AEF00965C81 /* BLECharacteristic.h in Headers */,
+				18B6A94020580AEF00965C81 /* ESSBeaconScanner.h in Headers */,
+				18B6A8A82058062200965C81 /* EnmoSDK.h in Headers */,
+				18B6A93620580AEF00965C81 /* EnmoRule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18B6A8962058062200965C81 /* EnmoSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B6A8AB2058062200965C81 /* Build configuration list for PBXNativeTarget "EnmoSDK" */;
+			buildPhases = (
+				14D9607FB5E5914F2AD261C8 /* [CP] Check Pods Manifest.lock */,
+				18B6A8922058062200965C81 /* Sources */,
+				18B6A8932058062200965C81 /* Frameworks */,
+				18B6A8942058062200965C81 /* Headers */,
+				18B6A8952058062200965C81 /* Resources */,
+				410CA1FBE9F10C705BD0169B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnmoSDK;
+			productName = EnmoSDK;
+			productReference = 18B6A8972058062200965C81 /* EnmoSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		18B6A89F2058062200965C81 /* EnmoSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B6A8AE2058062200965C81 /* Build configuration list for PBXNativeTarget "EnmoSDKTests" */;
+			buildPhases = (
+				E9CF243E76C47EE122891F3D /* [CP] Check Pods Manifest.lock */,
+				18B6A89C2058062200965C81 /* Sources */,
+				18B6A89D2058062200965C81 /* Frameworks */,
+				18B6A89E2058062200965C81 /* Resources */,
+				D1D58A04D6BB1D449645220D /* [CP] Embed Pods Frameworks */,
+				051FA26410CBBFCFC67F50B8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B6A8A32058062200965C81 /* PBXTargetDependency */,
+			);
+			name = EnmoSDKTests;
+			productName = EnmoSDKTests;
+			productReference = 18B6A8A02058062200965C81 /* EnmoSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B6A88E2058062200965C81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = APPLE;
+				TargetAttributes = {
+					18B6A8962058062200965C81 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					18B6A89F2058062200965C81 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 18B6A8912058062200965C81 /* Build configuration list for PBXProject "EnmoSDK" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18B6A88D2058062200965C81;
+			productRefGroup = 18B6A8982058062200965C81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B6A8962058062200965C81 /* EnmoSDK */,
+				18B6A89F2058062200965C81 /* EnmoSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B6A8952058062200965C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6A97720580BDD00965C81 /* DataModels.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B6A89E2058062200965C81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		051FA26410CBBFCFC67F50B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnmoSDKTests/Pods-EnmoSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14D9607FB5E5914F2AD261C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		410CA1FBE9F10C705BD0169B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnmoSDK/Pods-EnmoSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1D58A04D6BB1D449645220D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnmoSDKTests/Pods-EnmoSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9CF243E76C47EE122891F3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B6A8922058062200965C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6A94120580AEF00965C81 /* ESSBeaconScanner.m in Sources */,
+				18B6A93C20580AEF00965C81 /* BLEDevice.m in Sources */,
+				18B6A92C20580AEF00965C81 /* EnmoIDFV.m in Sources */,
+				18B6A94820580AEF00965C81 /* BeaconsManager.m in Sources */,
+				18B6A93120580AEF00965C81 /* EnmoGeofence.m in Sources */,
+				18B6A93A20580AEF00965C81 /* BLEDevice+CBPeripheralDelegate.m in Sources */,
+				18B6A98C205954BD00965C81 /* EnmoManager.m in Sources */,
+				18B6A94520580AEF00965C81 /* ESSTimer.m in Sources */,
+				18B6A94F20580AEF00965C81 /* Logger.m in Sources */,
+				18B6A95120580AEF00965C81 /* GimbalsManager.m in Sources */,
+				18B6A94E20580AEF00965C81 /* UIAlerter.m in Sources */,
+				18B6A92E20580AEF00965C81 /* EmailManager.m in Sources */,
+				18B6A94620580AEF00965C81 /* EddystoneManager.m in Sources */,
+				18B6A93520580AEF00965C81 /* EnmoAppId.m in Sources */,
+				18B6A92D20580AEF00965C81 /* RulesManager.m in Sources */,
+				18B6A93020580AEF00965C81 /* EnmoBeaconDetail.m in Sources */,
+				18B6A94A20580AEF00965C81 /* EnmoRule.m in Sources */,
+				18B6A93820580AEF00965C81 /* BLECharacteristic.m in Sources */,
+				18B6A93E20580AEF00965C81 /* BLEService.m in Sources */,
+				18B6A94320580AEF00965C81 /* ESSEddystone.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B6A89C2058062200965C81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6A8A62058062200965C81 /* EnmoSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B6A8A32058062200965C81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B6A8962058062200965C81 /* EnmoSDK */;
+			targetProxy = 18B6A8A22058062200965C81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18B6A8A92058062200965C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18B6A8AA2058062200965C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18B6A8AC2058062200965C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3EB49C9F342A749E3C369BE /* Pods-EnmoSDK.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JH49GPFA72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/Common.embeddedframework",
+					"$(PROJECT_DIR)/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)/ContextProfiling.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NetworkServices.embeddedframework",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(EnmoSDK)/EnmoSDK-Prefix.pch";
+				INFOPLIST_FILE = EnmoSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fissionlabs.Newproject.EnmoSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B6A8AD2058062200965C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B17A6FE5642AF008A25E6D7 /* Pods-EnmoSDK.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JH49GPFA72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/Common.embeddedframework",
+					"$(PROJECT_DIR)/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)/ContextProfiling.embeddedframework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/NetworkServices.embeddedframework",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(EnmoSDK)/EnmoSDK-Prefix.pch";
+				INFOPLIST_FILE = EnmoSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fissionlabs.Newproject.EnmoSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18B6A8AF2058062200965C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C68BD8CD6DED7C75F9AEB3 /* Pods-EnmoSDKTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JH49GPFA72;
+				INFOPLIST_FILE = EnmoSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fissionlabs.Newproject.EnmoSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B6A8B02058062200965C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C178A44E3401EED141088653 /* Pods-EnmoSDKTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JH49GPFA72;
+				INFOPLIST_FILE = EnmoSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fissionlabs.Newproject.EnmoSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B6A8912058062200965C81 /* Build configuration list for PBXProject "EnmoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B6A8A92058062200965C81 /* Debug */,
+				18B6A8AA2058062200965C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B6A8AB2058062200965C81 /* Build configuration list for PBXNativeTarget "EnmoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B6A8AC2058062200965C81 /* Debug */,
+				18B6A8AD2058062200965C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B6A8AE2058062200965C81 /* Build configuration list for PBXNativeTarget "EnmoSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B6A8AF2058062200965C81 /* Debug */,
+				18B6A8B02058062200965C81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18B6A88E2058062200965C81 /* Project object */;
+}

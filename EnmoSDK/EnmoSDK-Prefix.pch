@@ -1,0 +1,35 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+//	#define LOCAL_TESTING
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+	#import <CoreBluetooth/CoreBluetooth.h>
+
+	#import "RulesManager.h"
+	#import "UIAlerter.h"
+	#import "Logger.h"
+	#import "BeaconsManager.h"
+	#import "EmailManager.h"
+
+	#define KEY_URL_TO_SHOW_UPON_FOREGROUND			@"URLtoShowUponForeground"
+	#define KEY_RULES_FETCH_TIMESTAMP				@"fetchTimestamp"
+	#define KEY_ROOM_TYPE							@"roomType"
+	#define KEY_PUSH_TOKEN							@"push_token"
+
+#endif
+
+#define USE_TESTENMO_SERVER
+//#define USE_PUSH_NOTIFICATIONS

@@ -1,0 +1,1 @@
+../../../../Gimbal/Frameworks/Gimbal.framework/Headers/GMBLEstablishedLocation.h
