@@ -11,12 +11,18 @@
 #define KEY_URL_TO_SHOW_UPON_FOREGROUND            @"URLtoShowUponForeground"
 
 
+@protocol EnmoManagerDelegate <NSObject>
+
+@optional
+- (void) enmoManagerDidDeliverURL: (NSString*) url;
+@end
 
 @interface EnmoManager : NSObject{
     
 }
 
 @property (strong, nonatomic) void (^fetchCompletionHandler)(UIBackgroundFetchResult);
+@property (nonatomic, weak) id<EnmoManagerDelegate> delegate;
 
 
 + (EnmoManager*) shared;
@@ -29,8 +35,13 @@
 
 - ( NSInteger ) appIdTimer;
 
-- (void) checkNewRules;
+- (BOOL) checkNewRules;
 
+- ( void ) setAdvertiserId: (int) advID;
+
+- ( int) getAdvertiserId;
+
+-(void) prepareForAppTerminate;
 
 
 @end

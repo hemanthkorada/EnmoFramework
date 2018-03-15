@@ -23,25 +23,21 @@ EnmoManager *enmoManager = nil;
     }
 }
 
-- (void) checkNewRules {
-    [ [ RulesManager shared ] checkForNewRules ];
+- (BOOL) checkNewRules {
+    return  [ [ RulesManager shared ] checkForNewRules ];
 }
 
 
 - ( void ) start3rdPartyRanging
 {
     [ [ GimbalsManager shared ] startMonitoring ];
-    //#ifndef AUTOLOCK
     [ [ EddystoneManager shared ] startScanning ];
-    //#endif
 }
 
 - ( void ) stop3rdPartyRanging
 {
     [ [ GimbalsManager shared ] stopMonitoring ];
-    //#ifndef AUTOLOCK
     [ [ EddystoneManager shared ] stopScanning ];
-    //#endif
 }
 
 - ( void ) loadRulesFromServer: (BOOL) isForced
@@ -52,6 +48,18 @@ EnmoManager *enmoManager = nil;
 - ( NSInteger ) appIdTimer{
     return  [ RulesManager shared ].currentAppId.timer;
 }
+- ( void ) setAdvertiserId: (int) advID {
+    [ RulesManager shared ].advertiserId = advID;
+
+}
+- ( int ) getAdvertiserId {
+    return (int)[ RulesManager shared ].advertiserId;
+}
+
+- (void)prepareForAppTerminate {
+    [ [ RulesManager shared ] saveMonitoredRegions ];
+}
+
 
 
 @end
