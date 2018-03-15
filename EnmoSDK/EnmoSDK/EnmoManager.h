@@ -8,12 +8,29 @@
 
 #import <Foundation/Foundation.h>
 
-@interface EnmoManager : NSObject
+#define KEY_URL_TO_SHOW_UPON_FOREGROUND            @"URLtoShowUponForeground"
+
+
+
+@interface EnmoManager : NSObject{
+    
+}
+
+@property (strong, nonatomic) void (^fetchCompletionHandler)(UIBackgroundFetchResult);
+
 
 + (EnmoManager*) shared;
 
 - ( void ) start3rdPartyRanging;
 
 - ( void ) stop3rdPartyRanging;
+
+- ( void ) loadRulesFromServer: (BOOL) isForced;
+
+- ( NSInteger ) appIdTimer;
+
+- (void) checkNewRules;
+
+
 
 @end

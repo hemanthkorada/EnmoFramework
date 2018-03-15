@@ -23,6 +23,11 @@ EnmoManager *enmoManager = nil;
     }
 }
 
+- (void) checkNewRules {
+    [ [ RulesManager shared ] checkForNewRules ];
+}
+
+
 - ( void ) start3rdPartyRanging
 {
     [ [ GimbalsManager shared ] startMonitoring ];
@@ -37,6 +42,15 @@ EnmoManager *enmoManager = nil;
     //#ifndef AUTOLOCK
     [ [ EddystoneManager shared ] stopScanning ];
     //#endif
+}
+
+- ( void ) loadRulesFromServer: (BOOL) isForced
+{
+    [ [ RulesManager shared ] getRulesFromServer: NO ];
+}
+
+- ( NSInteger ) appIdTimer{
+    return  [ RulesManager shared ].currentAppId.timer;
 }
 
 
